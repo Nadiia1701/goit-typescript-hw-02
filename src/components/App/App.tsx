@@ -33,11 +33,11 @@ export default function App() {
     if (query === "") {
       return;
     }
-    async function getPhotos() {
+    async function getPhotos(): Promise<void> {
       try {
         setError(false);
         setIsLoading(true);
-        const data = await fetchPhotos(query, page);
+        const data: Image[] = await fetchPhotos(query, page);
         setPhotos((prevPhotos) => {
           return [...prevPhotos, ...data];
         });
