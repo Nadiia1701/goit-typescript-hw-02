@@ -16,3 +16,7 @@
     width: 100px;
     margin-left: 10px;
 }
+
+.btn:hover {
+    background-color:#e4c5f0;
+}
