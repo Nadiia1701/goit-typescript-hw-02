@@ -3,21 +3,21 @@ import ReactModal from 'react-modal';
 import css from './ImageModal.module.css'
 import { Image } from '../App/types';
 
-const customStyles = {
-  content: {
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)',
-    backgroundColor: '#000', 
-    border: 'none', 
-    maxWidth: '90%', 
-    maxHeight: '90%',
-    overflow: 'auto', 
-  },
-};
+// const customStyles = {
+//   content: {
+//     top: '50%',
+//     left: '50%',
+//     right: 'auto',
+//     bottom: 'auto',
+//     marginRight: '-50%',
+//     transform: 'translate(-50%, -50%)',
+//     backgroundColor: '#000', 
+//     border: 'none', 
+//     maxWidth: '90%', 
+//     maxHeight: '90%',
+//     overflow: 'auto', 
+//   },
+// };
 
 ReactModal.setAppElement('#root');
 
@@ -39,7 +39,7 @@ const ImageModal: React.FC<ImageModalProps> = ({ isOpen, onRequestClose, image }
       className={css.content}
       overlayClassName={css.overlay}
     >
-      <img className={ css.img} src={image.urls.regular} alt={image.alt_description} />
+      <img className={css.img} src={image.urls.regular} alt={image.alt_description} />
     </ReactModal>
   )
 }
