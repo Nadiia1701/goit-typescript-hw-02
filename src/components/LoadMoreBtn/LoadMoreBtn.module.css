@@ -1,7 +1,8 @@
 .btn {
-    background-color: #45aa56;
+    background-color: blueviolet    ;
     height: 50px;
     width: 150px;
+    color: aliceblue;
 }
 
 .container {
